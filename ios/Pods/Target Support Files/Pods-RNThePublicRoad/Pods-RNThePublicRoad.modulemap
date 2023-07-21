@@ -1,0 +1,6 @@
+framework module Pods_RNThePublicRoad {
+  umbrella header "Pods-RNThePublicRoad-umbrella.h"
+
+  export *
+  module * { export * }
+}
