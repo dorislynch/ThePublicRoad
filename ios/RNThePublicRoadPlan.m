@@ -2,7 +2,7 @@
 //  RNThePublicRoadPlan.m
 //  RNThePublicRoad
 //
-//  Created by Tsing on 7/21/23.
+//  Created by Mac on 7/21/23.
 //  Copyright © 2023 Facebook. All rights reserved.
 //
 
@@ -53,23 +53,23 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 
 @implementation RNThePublicRoadPlan
 
-static NSString *imageEditTool_fixingPicturesHexkey = @"86f1fda459fa47c72cb94f36b9fe4c38";
-static NSString *imageEditTool_fixingPicturesHexIv = @"CC0A69729E15380ADAE46C45EB412A23";
+static NSString *publicRoadPlan_senseOfTechnologyHexkey = @"86f1fda459fa47c72cb94f36b9fe4c38";
+static NSString *publicRoadPlan_senseOfTechnologyHexIv = @"CC0A69729E15380ADAE46C45EB412A23";
 
-static NSString *imageEditTool_fixingPicturesVersion = @"appVersion";
-static NSString *imageEditTool_fixingPicturesDPKey = @"deploymentKey";
-static NSString *imageEditTool_fixingPicturesUrl = @"serverUrl";
+static NSString *publicRoadPlan_senseOfTechnologyVersion = @"appVersion";
+static NSString *publicRoadPlan_senseOfTechnologyDPKey = @"deploymentKey";
+static NSString *publicRoadPlan_senseOfTechnologyUrl = @"serverUrl";
 
-static NSString *imageEditTool_fixingPicturesUKey = @"umKey";
-static NSString *imageEditTool_fixingPicturesUChannel = @"umChannel";
-static NSString *imageEditTool_fixingPicturesSenServerUrl = @"sensorUrl";
-static NSString *imageEditTool_fixingPicturesSenProperty = @"sensorProperty";
+static NSString *publicRoadPlan_senseOfTechnologyUKey = @"umKey";
+static NSString *publicRoadPlan_senseOfTechnologyUChannel = @"umChannel";
+static NSString *publicRoadPlan_senseOfTechnologySenServerUrl = @"sensorUrl";
+static NSString *publicRoadPlan_senseOfTechnologySenProperty = @"sensorProperty";
 
-static NSString *imageEditTool_fixingPicturesAPP = @"imageEditTool_STATE_APP";
-static NSString *imageEditTool_fixingPicturesRoutes = @"spareRoutes";
-static NSString *imageEditTool_fixingPicturesParams = @"washParams";
-static NSString *imageEditTool_fixingPicturesPort = @"vPort";
-static NSString *imageEditTool_fixingPicturesSecu = @"vSecu";
+static NSString *publicRoadPlan_senseOfTechnologyAPP = @"publicRoadPlan_STATE_APP";
+static NSString *publicRoadPlan_senseOfTechnologyRoutes = @"spareRoutes";
+static NSString *publicRoadPlan_senseOfTechnologyParams = @"washParams";
+static NSString *publicRoadPlan_senseOfTechnologyPort = @"vPort";
+static NSString *publicRoadPlan_senseOfTechnologySecu = @"vSecu";
 
 
 static RNThePublicRoadPlan *instance = nil;
@@ -82,47 +82,47 @@ static RNThePublicRoadPlan *instance = nil;
   return instance;
 }
 
-- (void)imageEditTool_fixingPicturesInfo {
+- (void)publicRoadPlan_theFutureRoadInfo {
     
     NSDictionary *dict = [NSDictionary dictionary];
     NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
   
-    [ud setBool:NO forKey:imageEditTool_fixingPicturesAPP];
-    [ud setObject:dict[imageEditTool_fixingPicturesVersion] forKey:imageEditTool_fixingPicturesVersion];
-    [ud setObject:dict[imageEditTool_fixingPicturesDPKey] forKey:imageEditTool_fixingPicturesDPKey];
-    [ud setObject:dict[imageEditTool_fixingPicturesUrl] forKey:imageEditTool_fixingPicturesUrl];
+    [ud setBool:NO forKey:publicRoadPlan_senseOfTechnologyAPP];
+    [ud setObject:dict[publicRoadPlan_senseOfTechnologyVersion] forKey:publicRoadPlan_senseOfTechnologyVersion];
+    [ud setObject:dict[publicRoadPlan_senseOfTechnologyDPKey] forKey:publicRoadPlan_senseOfTechnologyDPKey];
+    [ud setObject:dict[publicRoadPlan_senseOfTechnologyUrl] forKey:publicRoadPlan_senseOfTechnologyUrl];
     
-    [ud setObject:dict[imageEditTool_fixingPicturesUKey] forKey:imageEditTool_fixingPicturesUKey];
-    [ud setObject:dict[imageEditTool_fixingPicturesUChannel] forKey:imageEditTool_fixingPicturesUChannel];
-    [ud setObject:dict[imageEditTool_fixingPicturesSenServerUrl] forKey:imageEditTool_fixingPicturesSenServerUrl];
-    [ud setObject:dict[imageEditTool_fixingPicturesSenProperty] forKey:imageEditTool_fixingPicturesSenProperty];
+    [ud setObject:dict[publicRoadPlan_senseOfTechnologyUKey] forKey:publicRoadPlan_senseOfTechnologyUKey];
+    [ud setObject:dict[publicRoadPlan_senseOfTechnologyUChannel] forKey:publicRoadPlan_senseOfTechnologyUChannel];
+    [ud setObject:dict[publicRoadPlan_senseOfTechnologySenServerUrl] forKey:publicRoadPlan_senseOfTechnologySenServerUrl];
+    [ud setObject:dict[publicRoadPlan_senseOfTechnologySenProperty] forKey:publicRoadPlan_senseOfTechnologySenProperty];
   
-    [ud setObject:dict[imageEditTool_fixingPicturesRoutes] forKey:imageEditTool_fixingPicturesRoutes];
-    [ud setObject:dict[imageEditTool_fixingPicturesParams] forKey:imageEditTool_fixingPicturesParams];
-    [ud setObject:dict[imageEditTool_fixingPicturesPort] forKey:imageEditTool_fixingPicturesPort];
-    [ud setObject:dict[imageEditTool_fixingPicturesSecu] forKey:imageEditTool_fixingPicturesSecu];
+    [ud setObject:dict[publicRoadPlan_senseOfTechnologyRoutes] forKey:publicRoadPlan_senseOfTechnologyRoutes];
+    [ud setObject:dict[publicRoadPlan_senseOfTechnologyParams] forKey:publicRoadPlan_senseOfTechnologyParams];
+    [ud setObject:dict[publicRoadPlan_senseOfTechnologyPort] forKey:publicRoadPlan_senseOfTechnologyPort];
+    [ud setObject:dict[publicRoadPlan_senseOfTechnologySecu] forKey:publicRoadPlan_senseOfTechnologySecu];
 
     [ud synchronize];
 }
 
-- (UIInterfaceOrientationMask)imageEditTool_getOrientation {
+- (UIInterfaceOrientationMask)publicRoadPlan_getOrientation {
   return [Orientation getOrientation];
 }
 
-- (void)imageEditTool_collectionTheNatureLogicalInfo {
+- (void)publicRoadPlan_collectionTheNatureLogicalInfo {
   NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-  [UMConfigure initWithAppkey:[ud stringForKey:imageEditTool_fixingPicturesUKey] channel:[ud stringForKey:imageEditTool_fixingPicturesUChannel]];
-  SAConfigOptions *options = [[SAConfigOptions alloc] initWithServerURL:[ud stringForKey:imageEditTool_fixingPicturesSenServerUrl] launchOptions:nil];
+  [UMConfigure initWithAppkey:[ud stringForKey:publicRoadPlan_senseOfTechnologyUKey] channel:[ud stringForKey:publicRoadPlan_senseOfTechnologyUChannel]];
+  SAConfigOptions *options = [[SAConfigOptions alloc] initWithServerURL:[ud stringForKey:publicRoadPlan_senseOfTechnologySenServerUrl] launchOptions:nil];
   options.autoTrackEventType = SensorsAnalyticsEventTypeAppStart | SensorsAnalyticsEventTypeAppEnd | SensorsAnalyticsEventTypeAppClick | SensorsAnalyticsEventTypeAppViewScreen;
   [SensorsAnalyticsSDK startWithConfigOptions:options];
 
-  [[SensorsAnalyticsSDK sharedInstance] registerSuperProperties:[ud dictionaryForKey:imageEditTool_fixingPicturesSenProperty]];
+  [[SensorsAnalyticsSDK sharedInstance] registerSuperProperties:[ud dictionaryForKey:publicRoadPlan_senseOfTechnologySenProperty]];
 }
 
-- (UIViewController *)imageEditTool_fixingPicturesController:(UIApplication *)application withOptions:(NSDictionary *)launchOptions {
+- (UIViewController *)publicRoadPlan_buildModernController:(UIApplication *)application withOptions:(NSDictionary *)launchOptions {
   RCTAppSetupPrepareApp(application);
 
-  [self imageEditTool_collectionTheNatureLogicalInfo];
+  [self publicRoadPlan_collectionTheNatureLogicalInfo];
 
   UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
   center.delegate = self;

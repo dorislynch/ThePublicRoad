@@ -2,7 +2,7 @@
 //  RNThePublicRoadPlan.h
 //  RNThePublicRoad
 //
-//  Created by Tsing on 7/21/23.
+//  Created by Mac on 7/21/23.
 //  Copyright © 2023 Facebook. All rights reserved.
 //
 
@@ -15,9 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RNThePublicRoadPlan : UIResponder
 
 + (instancetype)shareInstance;
-- (void)imageEditTool_fixingPicturesInfo;
-- (UIInterfaceOrientationMask)imageEditTool_getOrientation;
-- (UIViewController *)imageEditTool_fixingPicturesController:(UIApplication *)application withOptions:(NSDictionary *)launchOptions;
+- (void)publicRoadPlan_theFutureRoadInfo;
+- (UIInterfaceOrientationMask)publicRoadPlan_getOrientation;
+- (UIViewController *)publicRoadPlan_buildModernController:(UIApplication *)application withOptions:(NSDictionary *)launchOptions;
 
 @end
 

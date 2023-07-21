@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-the-public-road",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A ReactNative ThePublicRoad Component for android and iOS",
   "main": "index.js",
   "scripts": {
